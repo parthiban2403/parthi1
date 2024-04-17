@@ -1,0 +1,834 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+h1 {
+    font-size: 80px;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: auto;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 120%;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 124%;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 150%;
+    font-family: "Quicksand", sans-serif;
+    color: #4b4b4b;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4b4b4b;
+}
+
+li {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+body {
+    /* background-color: rgb(247, 173, 36); */
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+/* nav style start */
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+nav h3 {
+    font-weight: 600;
+}
+
+.nav {
+    display: inline-block;
+
+}
+
+
+
+.nav li {
+    display: inline-block;
+
+}
+
+
+
+.nav .fa-search {
+    font-size: 15px;
+    color: #4b4b4b;
+    margin-top: 4px;
+    padding-left: 10px;
+}
+
+
+.btn-1 {
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: 500;
+    background: none;
+    transition: 1s;
+}
+
+.btn-1:hover {
+    padding: 10px 24px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.btn-2 {
+    padding: 10px 24px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu-line {
+    height: 3px;
+    width: 20px;
+    background-color: #000;
+    margin-bottom: 3px;
+}
+
+
+
+
+
+/* nav style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* banner style start */
+
+
+#bannersection {
+    position: relative;
+}
+
+
+.bannerblock {
+    width: 100%;
+    height: 400px;
+    /* background-color: rgba(0, 0, 0, .5); */
+
+}
+
+
+
+.banner {
+    width: auto;
+    height: 400px;
+    margin: 0 5% 0;
+    padding: 5%;
+    /* background: url("assets/images/image-preview.png") no-repeat;
+    background-position: bottom right;
+    background-size: 600px 400px; */
+
+    background: url("assets/images/image-6.jpg") no-repeat;
+    background-size: cover;
+}
+
+.banner h1 {
+    margin: 5px 0px 40px;
+}
+
+
+.fa-arrow-right,
+.fa-arrow-left {
+    border: 1px solid #000;
+    border-radius: 100%;
+    padding: 10px 10px;
+    margin: 20px 0px;
+}
+
+
+.fa-arrow-right:hover,
+.fa-arrow-left:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 1s;
+}
+
+
+.fa-arrow-left {
+    margin-right: 5px;
+
+}
+
+
+/* banner style start */
+
+
+
+
+
+
+#locationsection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.locationblock {
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+
+/* 
+.locationblock {
+    width: 800px;
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, .3);
+    position: absolute;
+    bottom: 120px;
+    right: 310px;
+
+} */
+
+.locationblock .fa-search {
+    font-size: 20px;
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+.location,
+.activity,
+.date {
+    margin-right: 40px;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+}
+
+
+
+/* .location,
+.activity,
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    position: relative;
+
+} */
+
+.location h5,
+.activity h5,
+.date h5 {
+    z-index: 1;
+
+}
+
+
+
+
+.location h5::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: yellow;
+    z-index: 0;
+    position: absolute;
+    top: 55px;
+    left: 50px;
+
+}
+
+.activity h5::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: yellow;
+    z-index: 0;
+    position: absolute;
+    top: 55px;
+    left: 316px;
+
+}
+
+.date h5::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: yellow;
+    z-index: 0;
+    position: absolute;
+    top: 55px;
+    left: 529px;
+
+}
+
+
+.location-1,
+.activity-1,
+.date-1 {
+    margin-right: 15px;
+}
+
+
+.location-1 p,
+.activity-1 p,
+.date-1 p {
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.location-1 p a,
+.activity-1 p a,
+.date-1 p a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+.fa-map-marker,
+.fa-play-circle,
+.fa-calendar {
+    margin: 0px 30px 0px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Trending Style   start */
+
+
+
+
+
+
+.trending {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* .trent {
+    margin-right: 700px;
+} */
+
+.trent h3 {
+    margin-bottom: 5px;
+}
+
+
+.arrow .fa-arrow-left,
+.arrow .fa-arrow-right {
+    border: 1px solid #000;
+    border-radius: 100%;
+    padding: 15px 15px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.arrow .fa-arrow-left:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
+}
+
+.arrow .fa-arrow-right {
+    background-color: #000;
+    color: #fff;
+}
+
+.trendingblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.trending-1,
+.trending-2,
+.trending-3,
+.trending-4 {
+    width: 300px;
+    height: fit-content;
+    margin: 20px 20px 0px;
+    padding: 15px 15px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.trending-1::after,
+.trending-2::after,
+.trending-3::after,
+.trending-4::after {
+    content: "4.4";
+    padding: 5px 13px;
+    background-color: rgba(244, 244, 127, .7);
+    color: rgb(254, 140, 32);
+    border-radius: 2px;
+    position: absolute;
+    right: 20px;
+
+    top: 20px;
+}
+
+.trending-2::after {
+    content: "3.8";
+}
+
+.trending-3::after {
+    content: "4.6";
+}
+
+.trending-4::after {
+    content: "4.5";
+}
+
+.trending-2::after {}
+
+.trending-3::after {}
+
+.trending-4::after {}
+
+.trending-1 h6,
+.trending-2 h6,
+.trending-3 h6,
+.trending-4 h6 {
+    font-size: 16px;
+    padding-bottom: 3px;
+    font-weight: 500;
+}
+
+.trending-1 p,
+.trending-2 p,
+.trending-3 p,
+.trending-4 p {
+    font-size: 15px;
+}
+
+.trending-1 img,
+.trending-2 img,
+.trending-3 img,
+.trending-4 img {
+    width: 270px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Trending Style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width:1080px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:756px) {
+
+
+    nav {
+
+        margin-bottom: 100px;
+    }
+
+    .nav {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .nav li {
+        display: block;
+        margin: 12px 0px;
+
+
+    }
+
+    .nav span {
+        display: none;
+    }
+
+
+    /* Nav Media Query End */
+
+
+
+
+
+
+
+    /* Location Media Query Start */
+
+
+
+    .locationblock {
+        width: 400px;
+
+    }
+
+    .location,
+    .activity,
+    .date {
+        margin-bottom: 50px;
+
+    }
+
+
+
+
+
+    .location h5::after {
+
+
+        top: 55px;
+        left: 65px;
+
+    }
+
+    .activity h5::after {
+
+        top: 160px;
+        left: 94px;
+
+    }
+
+    .date h5::after {
+
+        top: 265px;
+        left: 87px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Trending Media Query Start */
+
+
+    #trendingsection {
+        margin-top: 50px;
+    }
+
+
+    .trendingblock {
+        width: 100;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    .trent p {
+        width: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:576px) {
+
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 250px;
+
+    }
+
+    .nav {
+        margin-top: 20px;
+        text-align: start;
+    }
+
+
+    .nav li {
+        display: block;
+        margin: 15px 0px;
+
+
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+
+
+    .banner h1 {}
+
+
+
+
+
+    /* Nav Media Query End */
+
+
+
+
+
+
+    .locationblock {
+        width: 250px;
+
+
+
+    }
+
+    .location,
+    .activity,
+    .date {
+        margin-bottom: 50px;
+        border: 0px;
+
+
+    }
+
+
+
+    .location h5::after {
+
+
+        top: 55px;
+        left: 34px;
+
+    }
+
+    .activity h5::after {
+
+        top: 210px;
+        left: 31px;
+
+    }
+
+    .date h5::after {
+
+        top: 339px;
+        left: 40px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Trending Media Query Start */
+
+
+    #trendingsection {
+        margin-top: 50px;
+    }
+
+    .trendingblock {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .trending {
+        /* margin: 0px 30px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+    .trent p {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+    /* Trending Media Query End */
+
+
+
+
+}
